@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <link rel = "stylesheet" href="style.css">
+  <script src ="script.js"></script>
+  <title> Hangman </title>
+</head>
+<body>
+  <h1> Hangman </h1>
+  <div class = "wordAdd">
+    <input type = "text" id = "words" placeholder = "Add a word">
+    <input type = "submit" onclick = "buildWord()">
+  </div>
+  <div class = "checkChar">
+    <input type = "text" id = "chars" maxlength = "1"  placeholder = "Add a char">
+    <input type = "submit" onclick = "charCheck()">
+    <p id = "result"></p>
+    <p id = "gameResult"></p>
+    <p id = "attempts"> Remaining attempts </p>
+  </div>
+</body>
+</html> 
